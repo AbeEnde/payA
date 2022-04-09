@@ -1,15 +1,13 @@
 #!/usr/bin/env groovy
 
 node {
-    tools {dockerTool  "myDocker" }
+    stage('checkout') {
+        checkout scm
+    }
     stage('Initialize'){
         def dockerHome = tool 'myDocker'
         env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
-    stage('checkout') {
-        checkout scm
-    }
-  
     docker.image('jhipster/jhipster:v7.3.1').inside('-u jhipster -e GRADLE_USER_HOME=.gradle') {
         stage('check java') {
             bat "java -version"
