@@ -1,0 +1,79 @@
+<!-- <div id="centerId">
+  <div align="center" height="600" width="100">
+    <h1 align="center">Commting payment</h1>
+    <h2>Press finish to complete your payment!!</h2>
+  </div>
+  <div>
+    <button type="button" (click)="save()" (click)="getStat()" id="btn" align="center">
+      <b>Finsh</b>
+    </button>
+  </div>
+</div> -->
+
+<div>
+  <h1>Confirmation Page</h1>
+  <h2>Wait for Confirmation</h2>
+  <h1>{{ counter$ | async }}</h1>
+</div>
+
+<ng-template #mymodal let-modal align="center">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Confirmaion Message</h4>
+
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h2>your payment is completed!!</h2>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div>
+    <button type="button" routerLink="/pay-gov" class="btn btn-outline-dark" (click)="modal.close('Save click')" id="mdid" align="center">
+      OK
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #mymo let-modal align="center">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Error Message</h4>
+
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">X</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <h2>Faild to pay!!</h2>
+    <h2>Please try again!!</h2>
+  </div>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div>
+    <button type="button" routerLink="/pay-gov" class="btn btn-outline-dark" (click)="modal.close('Save click')" id="mdid" align="center">
+      OK
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #mymodet let-modal>
+  <form>
+    <div class="modal-header">
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <h4>your payment details</h4>
+    </div>
+    <div class="modal-body">
+      <h2>Invice ID:</h2>
+    </div>
+    <div>{{ det.body.invoiceID }}</div>
+    <br />
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </form>
+</ng-template>

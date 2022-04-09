@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div id="frm">
+  <form>
+    <h1 align="center">Your credentials are..</h1>
+    <div>
+      <strong>CIK</strong>
+    </div>
+    <div>{{ pay.cik }}</div>
+    <br />
+
+    <div>
+      <strong>CCC</strong>
+    </div>
+    <div>{{ pay.ccc }}</div>
+    <br />
+
+    <div>
+      <strong>Payment Amount</strong>
+    </div>
+    <div>{{ pay.paymentAmount }}</div>
+    <br />
+
+    <div>
+      <strong>NAME</strong>
+    </div>
+    <div>{{ pay.name }}</div>
+    <br />
+
+    <div>
+      <strong>Email</strong>
+    </div>
+    <div>{{ pay.email }}</div>
+    <br />
+
+    <div>
+      <strong>Phone</strong>
+    </div>
+    <div>{{ pay.phone }}</div>
+    <br />
+
+    <button class="btn btn-primary" routerLink="/pay-gov" id="back">Back</button>
+  </form>
+</div>
+
+<div *ngIf="loading; else loaded">
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only" id="loading"></span>
+    </div>
+    <br />
+    <h2>Loading...</h2>
+    <br />
+    <h2>{{ counter$ | async }}</h2>
+  </div>
+</div>
+<ng-template #loaded>
+  Loaded Succesefully!!
+  <script>
+    $(document).ready(function () {
+      $('#mymodal').modal('show');
+    });
+  </script>
+</ng-template>
+
+<ng-template #mymodal let-modal>
+  <form>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">You Are Going to pay</h4>
+
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+
+    <div class="modal-body">your details</div>
+    <div class="modal-body">Track_ID: {{ mockData.body.track_id }}</div>
+    <div class="modal-body">Name: {{ mockData.body.name }}</div>
+
+    <div class="modal-body">Email: {{ mockData.body.email }}</div>
+
+    <div class="modal-body">Address: {{ mockData.body.address }}</div>
+
+    <div class="modal-body">Credit Card: {{ mockData.body.creditCard }}</div>
+
+    <div class="modal-footer">
+      <div>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')" (click)="modal.dismiss('Cross click')">
+          Cancel
+        </button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Pay</button>
+      </div>
+    </div>
+  </form>
+</ng-template>
+
+<ng-template #mymo let-modal>
+  <form>
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-basic-title">Error message</h2>
+
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <h4>Error!!</h4>
+    </div>
+    <div class="modal-body">
+      <h2>You have not valid account</h2>
+      <h2>With cik provided</h2>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </form>
+</ng-template>
+
+<ng-template #mymode let-modal>
+  <form>
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-basic-title">Error message</h2>
+
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">X</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+      <h4>Data base related Error!!</h4>
+    </div>
+    <div class="modal-body">
+      <h4>plz try again</h4>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">OK</button>
+    </div>
+  </form>
+</ng-template>

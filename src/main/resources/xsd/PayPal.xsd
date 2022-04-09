@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <SOAP-ENV:Envelope 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+      
+      <SOAP-ENV:Header>
+        <RequesterCredentials xmlns="urn:ebay:api:PayPalAPI">
+          <Credentials xmlns="urn:ebay:apis:eBLBaseComponents">
+            <Username>sb-5mc3l8805351_api1.business.example.com</Username>
+            <Password>K4JTTPPLVJSP9UYK</Password>
+            <Signature>AHIg2A8zOx5VI-jN9zoxYN42n1JHApxLKn3OQDOJKLbZQS4jQI75Kowf</Signature>
+            <Subject/>
+         </Credentials>
+       </RequesterCredentials>
+     </SOAP-ENV:Header>
+
+     <SOAP-ENV:Body>
+       <Specific-API-Name-Req xmlns="urn:ebay:api:PayPalAPI">
+         <Specific-API-Name-Request>
+           <Version xmlns="urn:ebay:apis:eBLBaseComponents">216.0</Version>
+           <Required-Or-Optional-Fields xsd:type="Type">
+              <Amount currencyCode="USD">3.00</Amount>
+              <CREATESECURETOKEN>Y </CREATESECURETOKEN>
+	   </Required-Or-Optional-Fields>
+         </Specific-API-Name-Request>
+       </Specific-API-Name-Req>
+     </SOAP-ENV:Body>
+
+   </SOAP-ENV:Envelope>
+
+
+
+
+

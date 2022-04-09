@@ -1,0 +1,229 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-starter-activemq",
+    "version": "2.5.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.9.1",
+      "buildId": "xab3cdtiarcmhang6i4xnp4woe"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "2.5.5"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jms",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.apache.activemq",
+          "module": "activemq-broker",
+          "version": {
+            "requires": "5.16.3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.geronimo.specs",
+              "module": "geronimo-jms_1.1_spec"
+            }
+          ]
+        },
+        {
+          "group": "jakarta.jms",
+          "module": "jakarta.jms-api",
+          "version": {
+            "requires": "2.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5.jar",
+          "url": "spring-boot-starter-activemq-2.5.5.jar",
+          "size": 4759,
+          "sha512": "e17c3f197c3a029fc11dc6063315cbe3513ee7307f444666cc163768a076bb2923b2f81e564d61be501c4d7f4cf08016927763725d5c9a756acb260d046de435",
+          "sha256": "b0349b4bd17b38d65ce3c7603d3cece78798cfcfcd568b9114de68975e14c0d2",
+          "sha1": "ae814cfbf8b03855e0b0836c1fb6c149c202e7e8",
+          "md5": "48a4a9ca3cb9f85152da3641401b1be5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter",
+          "version": {
+            "requires": "2.5.5"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-jms",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.apache.activemq",
+          "module": "activemq-broker",
+          "version": {
+            "requires": "5.16.3"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.geronimo.specs",
+              "module": "geronimo-jms_1.1_spec"
+            }
+          ]
+        },
+        {
+          "group": "jakarta.jms",
+          "module": "jakarta.jms-api",
+          "version": {
+            "requires": "2.0.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5.jar",
+          "url": "spring-boot-starter-activemq-2.5.5.jar",
+          "size": 4759,
+          "sha512": "e17c3f197c3a029fc11dc6063315cbe3513ee7307f444666cc163768a076bb2923b2f81e564d61be501c4d7f4cf08016927763725d5c9a756acb260d046de435",
+          "sha256": "b0349b4bd17b38d65ce3c7603d3cece78798cfcfcd568b9114de68975e14c0d2",
+          "sha1": "ae814cfbf8b03855e0b0836c1fb6c149c202e7e8",
+          "md5": "48a4a9ca3cb9f85152da3641401b1be5"
+        }
+      ]
+    },
+    {
+      "name": "mavenOptionalApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5.jar",
+          "url": "spring-boot-starter-activemq-2.5.5.jar",
+          "size": 4759,
+          "sha512": "e17c3f197c3a029fc11dc6063315cbe3513ee7307f444666cc163768a076bb2923b2f81e564d61be501c4d7f4cf08016927763725d5c9a756acb260d046de435",
+          "sha256": "b0349b4bd17b38d65ce3c7603d3cece78798cfcfcd568b9114de68975e14c0d2",
+          "sha1": "ae814cfbf8b03855e0b0836c1fb6c149c202e7e8",
+          "md5": "48a4a9ca3cb9f85152da3641401b1be5"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.boot",
+          "name": "spring-boot-starter-activemq-maven-optional",
+          "version": "2.5.5"
+        }
+      ]
+    },
+    {
+      "name": "mavenOptionalRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5.jar",
+          "url": "spring-boot-starter-activemq-2.5.5.jar",
+          "size": 4759,
+          "sha512": "e17c3f197c3a029fc11dc6063315cbe3513ee7307f444666cc163768a076bb2923b2f81e564d61be501c4d7f4cf08016927763725d5c9a756acb260d046de435",
+          "sha256": "b0349b4bd17b38d65ce3c7603d3cece78798cfcfcd568b9114de68975e14c0d2",
+          "sha1": "ae814cfbf8b03855e0b0836c1fb6c149c202e7e8",
+          "md5": "48a4a9ca3cb9f85152da3641401b1be5"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.boot",
+          "name": "spring-boot-starter-activemq-maven-optional",
+          "version": "2.5.5"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5-javadoc.jar",
+          "url": "spring-boot-starter-activemq-2.5.5-javadoc.jar",
+          "size": 4748,
+          "sha512": "b1f04e8257524bc1ab5ce53bb5246a0d338da5d76ef544d0682afa756f11661c46403d0102193e3e647ba0edda47c783c0e190dcdb9645599ca4d47e2890e892",
+          "sha256": "45002886a6f26acab5058920f5d131d24fc1379465fb9171eb1141eb7d2775cd",
+          "sha1": "4619dbee4a667598a6d1d82a1e98c778f3c3b372",
+          "md5": "509a8d6017968cb61841e185bda28a27"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-activemq-2.5.5-sources.jar",
+          "url": "spring-boot-starter-activemq-2.5.5-sources.jar",
+          "size": 4747,
+          "sha512": "4eb9f5e73a2bf61121b314439a5fac1cf4174b749370243bb186a388b7a7293aed1ae9b75c6ce5cdd8523e33f80af6f27c96f16f8e889afed9778b36562d7ee7",
+          "sha256": "89912fdc4ce0c05611f0486a1082938bb26e6efd981f38d1ab67695fa32440bf",
+          "sha1": "47f9ed44ae121c557c8e86d0f37a7eb47d35f762",
+          "md5": "e1bb04db26d7a8963444e5ff88146375"
+        }
+      ]
+    }
+  ]
+}

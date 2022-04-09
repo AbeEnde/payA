@@ -1,0 +1,327 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-starter-jetty",
+    "version": "2.5.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.9.1",
+      "buildId": "xab3cdtiarcmhang6i4xnp4woe"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "jakarta.servlet",
+          "module": "jakarta.servlet-api",
+          "version": {
+            "requires": "4.0.4"
+          }
+        },
+        {
+          "group": "jakarta.websocket",
+          "module": "jakarta.websocket-api",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "org.apache.tomcat.embed",
+          "module": "tomcat-embed-el",
+          "version": {
+            "requires": "9.0.53"
+          }
+        },
+        {
+          "group": "org.eclipse.jetty",
+          "module": "jetty-servlets",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          }
+        },
+        {
+          "group": "org.eclipse.jetty",
+          "module": "jetty-webapp",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            }
+          ]
+        },
+        {
+          "group": "org.eclipse.jetty.websocket",
+          "module": "websocket-server",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            }
+          ]
+        },
+        {
+          "group": "org.eclipse.jetty.websocket",
+          "module": "javax-websocket-server-impl",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            },
+            {
+              "group": "javax.websocket",
+              "module": "javax.websocket-client-api"
+            },
+            {
+              "group": "javax.annotation",
+              "module": "javax.annotation-api"
+            },
+            {
+              "group": "javax.websocket",
+              "module": "javax.websocket-api"
+            },
+            {
+              "group": "org.eclipse.jetty",
+              "module": "jetty-jndi"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5.jar",
+          "url": "spring-boot-starter-jetty-2.5.5.jar",
+          "size": 4788,
+          "sha512": "22e6a09aebd334e88b95777cfbb7c26eb90d62df25f495970881b7e85d1c05f576530ee8515112e4b7320149b9ed6b3763183868ef2ae81c9202add6d6d60801",
+          "sha256": "7519ea3e605bbdb343cdc94ed02b3e780ca3527c9eba09ab4dd602a0274c31a7",
+          "sha1": "014f735eaf2dafd4a8ae5bcf2aa1fda918832a33",
+          "md5": "d6e226e90b57178a2567c6f483df43b7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "jakarta.servlet",
+          "module": "jakarta.servlet-api",
+          "version": {
+            "requires": "4.0.4"
+          }
+        },
+        {
+          "group": "jakarta.websocket",
+          "module": "jakarta.websocket-api",
+          "version": {
+            "requires": "1.1.2"
+          }
+        },
+        {
+          "group": "org.apache.tomcat.embed",
+          "module": "tomcat-embed-el",
+          "version": {
+            "requires": "9.0.53"
+          }
+        },
+        {
+          "group": "org.eclipse.jetty",
+          "module": "jetty-servlets",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          }
+        },
+        {
+          "group": "org.eclipse.jetty",
+          "module": "jetty-webapp",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            }
+          ]
+        },
+        {
+          "group": "org.eclipse.jetty.websocket",
+          "module": "websocket-server",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            }
+          ]
+        },
+        {
+          "group": "org.eclipse.jetty.websocket",
+          "module": "javax-websocket-server-impl",
+          "version": {
+            "requires": "9.4.43.v20210629"
+          },
+          "excludes": [
+            {
+              "group": "javax.servlet",
+              "module": "javax.servlet-api"
+            },
+            {
+              "group": "javax.websocket",
+              "module": "javax.websocket-client-api"
+            },
+            {
+              "group": "javax.annotation",
+              "module": "javax.annotation-api"
+            },
+            {
+              "group": "javax.websocket",
+              "module": "javax.websocket-api"
+            },
+            {
+              "group": "org.eclipse.jetty",
+              "module": "jetty-jndi"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5.jar",
+          "url": "spring-boot-starter-jetty-2.5.5.jar",
+          "size": 4788,
+          "sha512": "22e6a09aebd334e88b95777cfbb7c26eb90d62df25f495970881b7e85d1c05f576530ee8515112e4b7320149b9ed6b3763183868ef2ae81c9202add6d6d60801",
+          "sha256": "7519ea3e605bbdb343cdc94ed02b3e780ca3527c9eba09ab4dd602a0274c31a7",
+          "sha1": "014f735eaf2dafd4a8ae5bcf2aa1fda918832a33",
+          "md5": "d6e226e90b57178a2567c6f483df43b7"
+        }
+      ]
+    },
+    {
+      "name": "mavenOptionalApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5.jar",
+          "url": "spring-boot-starter-jetty-2.5.5.jar",
+          "size": 4788,
+          "sha512": "22e6a09aebd334e88b95777cfbb7c26eb90d62df25f495970881b7e85d1c05f576530ee8515112e4b7320149b9ed6b3763183868ef2ae81c9202add6d6d60801",
+          "sha256": "7519ea3e605bbdb343cdc94ed02b3e780ca3527c9eba09ab4dd602a0274c31a7",
+          "sha1": "014f735eaf2dafd4a8ae5bcf2aa1fda918832a33",
+          "md5": "d6e226e90b57178a2567c6f483df43b7"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.boot",
+          "name": "spring-boot-starter-jetty-maven-optional",
+          "version": "2.5.5"
+        }
+      ]
+    },
+    {
+      "name": "mavenOptionalRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5.jar",
+          "url": "spring-boot-starter-jetty-2.5.5.jar",
+          "size": 4788,
+          "sha512": "22e6a09aebd334e88b95777cfbb7c26eb90d62df25f495970881b7e85d1c05f576530ee8515112e4b7320149b9ed6b3763183868ef2ae81c9202add6d6d60801",
+          "sha256": "7519ea3e605bbdb343cdc94ed02b3e780ca3527c9eba09ab4dd602a0274c31a7",
+          "sha1": "014f735eaf2dafd4a8ae5bcf2aa1fda918832a33",
+          "md5": "d6e226e90b57178a2567c6f483df43b7"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "org.springframework.boot",
+          "name": "spring-boot-starter-jetty-maven-optional",
+          "version": "2.5.5"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5-javadoc.jar",
+          "url": "spring-boot-starter-jetty-2.5.5-javadoc.jar",
+          "size": 4745,
+          "sha512": "38486d74fac76a2db8ca0a2b95aebf167a78ba61a81a73ed8ddb671cbab8aa1e308dce93247d7ed4d82661481fc6c692f1f6617573942e8932f873803ff0dec5",
+          "sha256": "69ff80628ea32f52d4b8ae023d6fccccc724d3f91ab65c7129804718e31c7363",
+          "sha1": "234c33036a6340295fe4c45839996a81f06230a7",
+          "md5": "613f23532f23d7ff38aec0e8d1dcf61c"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-starter-jetty-2.5.5-sources.jar",
+          "url": "spring-boot-starter-jetty-2.5.5-sources.jar",
+          "size": 4744,
+          "sha512": "0707363fdfcad31c2bf2890f269bcb62f6f8b514670699bc93a87761c1fe328f66fb4042f4413d3e06735ec1c9a6a585e1d45851e27a6bddeb0caa7eb7a727aa",
+          "sha256": "e0ad32b50e0e90eb30de7dfa7f4550b81825b716a351bf53a991e18db9b22714",
+          "sha1": "3c1d5027c68a4d81ad2e567d701f12e03e405f72",
+          "md5": "c7879b9be0c5c962df56cdd125211bd7"
+        }
+      ]
+    }
+  ]
+}

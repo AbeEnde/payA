@@ -1,0 +1,120 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-jms",
+    "version": "5.3.10",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-messaging",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "5.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-jms-5.3.10.jar",
+          "url": "spring-jms-5.3.10.jar",
+          "size": 268339,
+          "sha512": "c475ebbeb943744771b420afa9dd63f9d3891b6123c02e793cf2a2ef7230b0fc23f7faa4adbc201195d6ecefb98b0ca090b2094bfbf2f8530188423ef766880a",
+          "sha256": "cd1328a06f3f3c58377d4f52234fd2ae06a031d92c20c209135df145b1f8d79a",
+          "sha1": "db3e368b557a85b17518adf2e35fa616c619b034",
+          "md5": "ba6c0a58bfae53c6ac62846596070ff2"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-messaging",
+          "version": {
+            "requires": "5.3.10"
+          }
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-tx",
+          "version": {
+            "requires": "5.3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-jms-5.3.10.jar",
+          "url": "spring-jms-5.3.10.jar",
+          "size": 268339,
+          "sha512": "c475ebbeb943744771b420afa9dd63f9d3891b6123c02e793cf2a2ef7230b0fc23f7faa4adbc201195d6ecefb98b0ca090b2094bfbf2f8530188423ef766880a",
+          "sha256": "cd1328a06f3f3c58377d4f52234fd2ae06a031d92c20c209135df145b1f8d79a",
+          "sha1": "db3e368b557a85b17518adf2e35fa616c619b034",
+          "md5": "ba6c0a58bfae53c6ac62846596070ff2"
+        }
+      ]
+    }
+  ]
+}

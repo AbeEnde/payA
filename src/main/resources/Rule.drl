@@ -1,0 +1,14 @@
+package com.mycompany.myapp.drools;
+import com.mycompany.myapp.drools.WholePay;
+rule "PAYMENT Success"
+    when
+     wp:WholePay(paymentAmount < balance) && WholePay(country == "Ethiopia") 
+    then
+    wp.setStatus("Success");
+end
+rule "PAYMENT Failler"
+    when
+      wp:WholePay(paymentAmount >= balance) || wp:WholePay(country != "Ethiopia") 
+    then
+   wp.setStatus("Faild");
+end
