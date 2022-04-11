@@ -4,10 +4,10 @@ node {
     stage('checkout') {
         checkout scm
     }
-    stage('Initialize'){
+   /* stage('Initialize'){
         def dockerHome = tool 'myDocker'
         env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
+    } */
     docker.image('jhipster/jhipster:v7.3.1').inside('-u jhipster -e GRADLE_USER_HOME=.gradle') {
         stage('check java') {
             bat "java -version"
